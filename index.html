@@ -18,93 +18,103 @@
     <h2>Ссылки</h2>
 
     <ol>
-      <li><a href="https://www.kubsu.ru/index.php">КубГУ</a></li><!--1-->
-      <li><a href="http://kubsu.ru/">КубГУ</a></li><!--2-->
-      <li><a href="/index.html">сокращенная ссылку на внутреннюю страницу</a></li><!--4-->
-      <li><a href=""></a></li><!--5-->
-      <li><a href=""></a></li><!--6-->
-      <li><a href=""></a></li><!--7-->
-      <li><a href=""></a></li><!--8-->
-      <li><a href=""></a></li><!--9-->
-      <li><a href=""></a></li><!--10-->
-      <li><a href=""></a></li><!--11-->
-      <li><a href=""></a></li><!--12-->
-      <li><a href=""></a></li><!--13-->
-      <li><a href=""></a></li><!--14-->
-      <li><a href=""></a></li><!--15-->
-      <li><a href=""></a>Пустой href</li><!--16-->
-      <li><a href=""></a></li><!--18-->
-      <li><a href=""></a></li><!--19-->
-      <li><a href=""></a></li><!--20-->
-      <li><a href=""></a></li><!--21-->
+      <li><a href="https://www.kubsu.ru/index.php">Абсолютная ссылка на kubsu.ru</a></li><!--1-->
+      <li><a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li><!--2-->
+      <li><a href="https://picrew.me/en/image_maker/143336"><img src="photo_2025-09-18_22-52-54.jpg" alt="Воин" style="width: 300px;"></a></li>
+      <li><a href="/about">Cокращенная ссылку на внутреннюю страницу</a></li><!--4-->
+      <li><a href="/main">Сокращенная ссылка на главную страницу</a></li><!--5-->
+      <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li><!--6-->
+      <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li><!--7-->
+      <li><a href="https://example.com/user?id=12345">Ссылка с параметром id</a></li><!--8-->
+      <li><a href="page.html">Относительная ссылка в текущем каталоге</a></li><!--9-->
+      <li><a href="about/page.html">Относительная ссылка в каталоге about</a></li><!--10-->
+      <li><a href="../page.html">Относительная ссылка на уровень выше</a></li><!--11-->
+      <li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li><!--12-->
+      <li>В современном образовании важную роль играют <a href="https://kubsu.ru">университеты</a>, которые предоставляют качественное образование.</li><!--13-->
+      <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference">Ссылка на фрагмент MDN</a></li><!--14-->
+      <li><a href=""> <img src="photo_2025-09-18_22-52-54.jpg" alt="Image Map" usemap="#examplemap" width="200" height="200">
+            <map name="examplemap">
+                <area shape="rect" coords="0,0,150,100" href="https://picrew.me/en/image_maker/143336" alt="Прямоугольная область">
+                <area shape="circle" coords="225,150,50" href="https://picrew.me/en/image_maker/143336" alt="Круглая область">
+            </map></a></li><!--15-->
+      <li><a href=""></a>Ссылка с пустым href</li><!--16-->
+      <li><a>Ссылка без href</a></li><!--17-->
+      <li><a href="https://kubsu.ru" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li><!--18-->
+      <li><a href="https://kubsu.ru" rel="noindex">Ссылка запрещенная для индексации</a></li><!--19-->
+      <li><ul>
+                <li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+                <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+            </ul>
+          </li><!--20-->
+      <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP файл с авторизацией</a></li><!--21-->
     </ol>
 
     <form action="/"
       method="POST">
 
       <label>
-        Однострочное текстовое поле:<br />
+        ФИО:<br />
         <input name="field-name-1"
-          value="начальное значение" />
+          placeholder="Введите ФИО" />
+      </label><br />
+    
+      <label>
+        Телефон:<br />
+        <input name="field-tel"
+          placeholder="Введите номер телефона" />
       </label><br />
 
       <label>
-        Текстовое поле email:<br />
+        e-mail:<br />
         <input name="field-email"
           type="email"
-          placeholder="Введите вашу почту" />
+          placeholder="Введите вашу электронную почту" />
       </label><br />
 
       <label>
-        Текстовое поле даты:<br />
+        Дата рождения:<br />
         <input name="field-date"
-          value="2019-08-13"
+          placeholder="2019-08-13"
           type="date" />
       </label><br />
 
-      <label>
-        Многострочное текстовое поле:<br />
-        <textarea name="field-name-2">начальное значение</textarea>
-      </label><br />
-
-      <label>
-        Список (combobox):<br />
-        <select name="field-name-3">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3">Метка3</option>
-        </select>
-      </label><br />
-
-      <label>
-        Список (listbox с множественным выбором):
-        <br />
-        <select name="field-name-4[]"
-          multiple="multiple">
-          <option value="Значение1">Метка1</option>
-          <option value="Значение2" selected="selected">Метка2</option>
-          <option value="Значение3" selected="selected">Метка3</option>
-        </select>
-      </label><br />
-
-      Радиокнопки:<br />
+      Пол:<br />
       <label><input type="radio" checked="checked"
         name="radio-group-1" value="Значение1" />
-        Подпись радиокнопки 1</label>
+        Муж.</label>
       <label><input type="radio"
         name="radio-group-1" value="Значение2" />
-        Подпись радиокнопки 2</label><br />
+        Жен.</label><br />
 
-      Чекбокс:<br />
+      Любимый язык программирования :<br />
+        <select name="field-prog"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2">C</option>
+          <option value="Значение3">C++</option>
+          <option value="Значение3">JavaScript</option>
+          <option value="Значение3">PHP</option>
+          <option value="Значение3">Python</option>
+          <option value="Значение3">Java</option>
+          <option value="Значение3">Haskel</option>
+          <option value="Значение3">Clojure</option>
+          <option value="Значение3">Prolog</option>
+          <option value="Значение3">Scala</option>
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-BIO"></textarea>
+      </label><br />
+
+      Контракт:<br />
       <label><input type="checkbox" checked="checked"
         name="check-1" />
-        Подпись чекбокса ставим справа</label><br />
+        С контрактом ознакомлен</label><br />
 
-      Кнопка отправки формы,
-      при нажатии заполненные в форму данные
-      отправятся в формате urlencoded методом
-      POST или GET по адресу URL_отправки_данных:
-      <input type="submit" value="Отправить" />
+      <input type="submit" value="Сохранить" />
     </form>
     
   </body>
