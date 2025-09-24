@@ -3,49 +3,96 @@
 <html lang="ru">
 
   <head>
-    <title>Web-разработка домашка</title>
+    <title>Web-разработка домашка №2</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
+    <header class="header">
+        <img style="float:left; margin:10px; width:150px; height:150px;" src="photo_2025-09-22_19-10-16.jpg_aternia.games_token.png" alt="Логотип" />
+      <div class="nHeader">Задание 2</div>
+      <nav class="nav_style">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">О нас</a>
+        <a href="#" class="nav-link">Услуги</a>
+        <a href="#" class="nav-link">Контакты</a>
+      </nav>
+    </header>
 
-    <h1>Задние 1</h1>
-
-    <h2>Ссылки</h2>
-
-    <ol>
-      <li><a href="https://www.kubsu.ru/index.php">Абсолютная ссылка на kubsu.ru</a></li><!--1-->
-      <li><a href="http://kubsu.ru/">Абсолютная ссылка на kubsu.ru (HTTPS)</a></li><!--2-->
-      <li><a href="https://picrew.me/en/image_maker/143336"><img src="photo_2025-09-18_22-52-54.jpg" alt="Воин" style="width: 300px;"></a></li>
-      <li><a href="/about">Cокращенная ссылку на внутреннюю страницу</a></li><!--4-->
-      <li><a href="/main">Сокращенная ссылка на главную страницу</a></li><!--5-->
-      <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li><!--6-->
-      <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами</a></li><!--7-->
-      <li><a href="https://example.com/user?id=12345">Ссылка с параметром id</a></li><!--8-->
-      <li><a href="page.html">Относительная ссылка в текущем каталоге</a></li><!--9-->
-      <li><a href="about/page.html">Относительная ссылка в каталоге about</a></li><!--10-->
-      <li><a href="../page.html">Относительная ссылка на уровень выше</a></li><!--11-->
-      <li><a href="../../page.html">Относительная ссылка двумя уровнями выше</a></li><!--12-->
-      <li>В современном образовании важную роль играют <a href="https://kubsu.ru">университеты</a>, которые предоставляют качественное образование.</li><!--13-->
-      <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference">Ссылка на фрагмент MDN</a></li><!--14-->
-      <li><a href=""> <img src="photo_2025-09-18_22-52-54.jpg" alt="Image Map" usemap="#examplemap" width="200" height="200">
-            <map name="examplemap">
-                <area shape="rect" coords="0,0,150,100" href="https://picrew.me/en/image_maker/143336" alt="Прямоугольная область">
-                <area shape="circle" coords="225,150,50" href="https://picrew.me/en/image_maker/143336" alt="Круглая область">
-            </map></a></li><!--15-->
-      <li><a href=""></a>Ссылка с пустым href</li><!--16-->
-      <li><a>Ссылка без href</a></li><!--17-->
-      <li><a href="https://kubsu.ru" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li><!--18-->
-      <li><a href="https://kubsu.ru" rel="noindex">Ссылка запрещенная для индексации</a></li><!--19-->
-      <li><ul>
-                <li><a href="https://kubsu.ru" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
-                <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
-                <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
-            </ul>
-          </li><!--20-->
-      <li><a href="ftp://username:password@ftp.example.com/file.txt">Ссылка на FTP файл с авторизацией</a></li><!--21-->
-    </ol>
-
-    <form action="/"
+    <div class="URLS"><h2>Ссылки:</h2>
+      <ol>
+        <li><a href="http://www.kubsu.ru/index.php" class="olink">Абсолютная ссылка на kubsu.ru</a></li><!--1-->
+        <li><a href="https://kubsu.ru/" class="olink" >Абсолютная ссылка на kubsu.ru (HTTPS)</a></li><!--2-->
+        <li><a href="https://picrew.me/en/image_maker/143336" class="olink"><img src="photo_2025-09-22_19-14-39.jpg" alt="Воительница" style="width: 300px;"></a></li>
+        <li><a href="/about" class="olink">Cокращенная ссылку на внутреннюю страницу</a></li><!--4-->
+        <li><a href="/main" class="olink">Сокращенная ссылка на главную страницу</a></li><!--5-->
+        <li><a href="#fragment" class="olink">Ссылка на фрагмент текущей страницы</a></li><!--6-->
+        <li><a href="https://example.com/page?param1=value1&param2=value2&param3=value3" class="olink">Ссылка с тремя параметрами</a></li><!--7-->
+        <li><a href="https://example.com/user?id=12345" class="olink">Ссылка с параметром id</a></li><!--8-->
+        <li><a href="page.html" class="olink">Относительная ссылка в текущем каталоге</a></li><!--9-->
+        <li><a href="about/page.html" class="olink">Относительная ссылка в каталоге about</a></li><!--10-->
+        <li><a href="../page.html" class="olink">Относительная ссылка на уровень выше</a></li><!--11-->
+        <li><a href="../../page.html" class="olink">Относительная ссылка двумя уровнями выше</a></li><!--12-->
+        <li>В современном образовании важную роль играют <a href="https://kubsu.ru" class="olink">университеты</a>, которые предоставляют качественное образование.</li><!--13-->
+        <li><a href="https://developer.mozilla.org/ru/docs/Web/HTML#reference" class="olink">Ссылка на фрагмент MDN</a></li><!--14-->
+        <li><a href=""> <img src="photo_2025-09-22_19-14-34.jpg" alt="Воин" width="200" height="200">
+              <map name="examplemap">
+                  <area shape="rect" coords="0,0,150,100" href="https://picrew.me/en/image_maker/143336" alt="Прямоугольная область">
+                  <area shape="circle" coords="225,150,50" href="https://picrew.me/en/image_maker/143336" alt="Круглая область">
+              </map></a></li><!--15-->
+        <li><a href="" class="olink"></a>Ссылка с пустым href</li><!--16-->
+        <li><a class="olink">Ссылка без href</a></li><!--17-->
+        <li><a href="https://kubsu.ru" class="olink" rel="nofollow">Ссылка с запретом перехода для поисковиков</a></li><!--18-->
+        <li><a href="https://kubsu.ru" class="olink" rel="noindex">Ссылка запрещенная для индексации</a></li><!--19-->
+        <li><ul>
+                  <li><a href="https://kubsu.ru" class="olink" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+                  <li><a href="https://kubsu.ru/university" class="olink" title="Информация об университете">Об университете</a></li>
+                  <li><a href="https://kubsu.ru/education" class="olink" title="Образовательные программы">Образование</a></li>
+              </ul>
+            </li><!--20-->
+        <li><a href="ftp://username:password@ftp.example.com/file.txt" class="olink">Ссылка на FTP файл с авторизацией</a></li><!--21-->
+      </ol>
+    </div>
+      
+    <div class="Table">
+      <h2>Таблица</h2>
+      <table class="tablest">
+        <tr class="tabhead">
+          <th>Колонка 1</th>
+          <th>Колонка 2</th>
+          <th>Колонка 3</th>
+          <th>Колонка 4</th>
+        </tr>
+        <tr class="nochet">
+          <td rowspan="4">Ячейки 14, 24, 31, 41</td>
+          <td>Ячейка 12</td>
+          <td>Ячейка 13</td>
+          <td>Ячейка 14</td>
+        </tr>
+        <tr class="chet">
+          <td colspan="3">Ячейка 22, 23 и 24</td>
+        </tr>
+        <tr class="nochet">
+          <td>Ячейка 32</td>
+          <td>Ячейка 33</td>
+          <td>Ячейка 34</td>
+        </tr>
+        <tr class="chet">
+          <td colspan="3">Ячейка 42, 43 и 44</td>
+        </tr>
+        <tr class="nochet">
+          <td>Ячейка 51</td>
+          <td>Ячейка 52</td>
+          <td>Ячейка 53</td>
+          <td>Ячейка 54</td>
+        </tr>
+        <tr class="chet">
+          <td colspan="2">Ячейка 61 и 62</td>
+          <td>Ячейка 63</td>
+          <td>Ячейка 64</td>
+        </tr>
+      </table></div>
+    <div class="Form"><form action="/"
       method="POST">
 
       <label>
@@ -70,7 +117,7 @@
       <label>
         Дата рождения:<br />
         <input name="field-date"
-          placeholder="2019-08-13"
+          value="2019-08-13"
           type="date" />
       </label><br />
 
@@ -88,16 +135,16 @@
           <option value="Значение1">Pascal</option>
           <option value="Значение2">C</option>
           <option value="Значение3">C++</option>
-          <option value="Значение3">JavaScript</option>
-          <option value="Значение3">PHP</option>
-          <option value="Значение3">Python</option>
-          <option value="Значение3">Java</option>
-          <option value="Значение3">Haskel</option>
-          <option value="Значение3">Clojure</option>
-          <option value="Значение3">Prolog</option>
-          <option value="Значение3">Scala</option>
+          <option value="Значение4">JavaScript</option>
+          <option value="Значение5">PHP</option>
+          <option value="Значение6">Python</option>
+          <option value="Значение7">Java</option>
+          <option value="Значение8">Haskel</option>
+          <option value="Значение9">Clojure</option>
+          <option value="Значение10">Prolog</option>
+          <option value="Значение11">Scala</option>
         </select>
-      </label><br />
+      <br/>
 
       <label>
         Биография:<br />
@@ -110,7 +157,11 @@
         С контрактом ознакомлен</label><br />
 
       <input type="submit" value="Сохранить" />
-    </form>
+    </form></div>
+
+    <footer class="header">
+      <div class="nfooter">(c) Стебливец Антон</div>
+    </footer>
     
   </body>
 
